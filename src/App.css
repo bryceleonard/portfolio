@@ -36,3 +36,93 @@
     transform: rotate(360deg);
   }
 }
+
+.listStyle   {
+  text-decoration: none;
+  font-size: 14px;
+  margin:0 18px;
+  padding: 5px 20px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0;
+  line-height: 50px;
+
+  padding: 0px 15px;
+}
+
+.resume {
+  background:#32CD32;
+  color: white;
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(20,20,20,0.35);
+  -moz-box-shadow: inset 2px 2px 2px 0px rgba(20,20,20,0.35);
+  box-shadow: inset 2px 2px 2px 0px rgba(20,20,20,0.35);
+}
+
+.resume:hover {
+  -webkit-box-shadow: -3px -3px 3px 0px rgba(20,20,20,0.35);
+  -moz-box-shadow: -2px -2px 2px 0px rgba(20,20,20,0.35);
+  box-shadow: -3px -3px 3px 0px rgba(20,20,20,0.35);
+}
+
+
+.expereinceSection {
+  padding-top: 130px;
+}
+
+
+.activeList {
+  background: white;
+  border-radius: 10px;
+  color: #141414;
+  list-style: none;
+}
+
+.hideDec {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.hideDec li {
+  padding: 15px;
+  cursor: pointer;
+  
+}
+
+.hideDec li:hover {
+  background-color: #32CD32;
+  color: white;
+  border-radius: 10px; 
+}
+
+.slideContent div {
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+.slideContent div p{
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.slideContent div img{
+  width: 850px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.slideNav {
+  width: 50%;
+  display: inline-block;
+  vertical-align: text-bottom;
+  font-size: 14px;
+
+
+}

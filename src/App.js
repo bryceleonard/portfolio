@@ -1,23 +1,115 @@
-import logo from './logo.svg';
+
 import './App.css';
+import "@fontsource/poppins";
+import About from './components/about.js';
+import Hero from './components/hero.js';
+import Home from './components/home.js'
+import Experience from './components/experience.js'
+import Pdf from './BLResume.pdf'
+import $ from 'jquery';
+import logo from './bblogo.png'
+
+import { useRef } from 'react';
+import { isCompositeComponentWithType } from 'react-dom/test-utils';
+
+const pStyle =  {
+
+  margin: "0",
+  verticalalign: "middle",
+  lineheight: "50px",
+  display: "inline-block"
+}
+const img = {
+  height: "35px",
+  display: "inline-block",
+}
+
+
+
+const navStyle ={
+
+  display: "block",
+  background: "white",
+
+  alignItems: "center",
+  overflow: "hidden",
+  width: "100%",
+  margin: "auto",
+  top: "0",
+  position: "fixed",
+  boxShadow: "0px 3px 3px 0px rgba(20,20,20,0.45)",
+
+
+}
+
+const ul = {
+  float: "right",
+  paddingRight: "50px",
+
+}
+
 
 function App() {
+
+  
+  const handleClickScroll = (event) => {
+    const section_id = event.currentTarget.getAttribute("section");
+    const element = document.getElementById(section_id);
+    if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+    $(function() {
+
+      $('li[id^=home]').addClass("activeNav");
+  
+      //Home
+      $('#Home').click(function() {
+          $('li[id^=home]').addClass("activeNav");
+          $('li[id^=experience]').removeClass("activeNav");
+          $('li[id^=aboutme]').removeClass("activeNav");
+      });
+      $('#aboutme').click(function() {
+        $('li[id^=home]').removeClass("activeNav");
+        $('li[id^=experience]').removeClass("activeNav");
+        $('li[id^=aboutme]').addClass("activeNav");
+      });
+      $('#experience').click(function() {
+        $('li[id^=home]').removeClass("activeNav");
+        $('li[id^=experience]').addClass("activeNav");
+        $('li[id^=aboutme]').removeClass("activeNav");
+      });
+  
+      
+  
+  
+  })
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section id="top">
+        <div style={navStyle}>
+          <ul style={ul}>
+              <li onClick={handleClickScroll} section="top" className="listStyle">Home</li>
+              <li className="listStyle" onClick={handleClickScroll} section="experience" >Experience</li>
+              <li className="listStyle" onClick={handleClickScroll} section="about">About Me</li>
+              <a className="listStyle resume" href={Pdf} without="true" rel="noopener noreferrer" target="_blank">Resume</a>
+          </ul>
+        </div>
+        </section>
+       
+      <section className="homeSection" id="home">
+       <Home />
+
+      </section>
+
+
+      <section className="expereinceSection" id="experience">
+        <Experience />
+      </section>
+      <section id="about">
+        <About />
+      </section>
     </div>
   );
 }
