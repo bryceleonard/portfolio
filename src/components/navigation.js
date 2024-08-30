@@ -1,6 +1,6 @@
 
 import { useRef } from 'react';
-import logo from "../bblogo.png";
+
 
 const MyComponent = () => {
   const myRef = useRef<HTMLElement | null>(null);

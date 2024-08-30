@@ -2,15 +2,11 @@
 import './App.css';
 import "@fontsource/poppins";
 import About from './components/about.js';
-import Hero from './components/hero.js';
+
 import Home from './components/home.js'
 import Experience from './components/experience.js'
 import Pdf from './BLResume.pdf'
 import $ from 'jquery';
-import logo from './bblogo.png'
-
-import { useRef } from 'react';
-import { isCompositeComponentWithType } from 'react-dom/test-utils';
 
 const pStyle =  {
 

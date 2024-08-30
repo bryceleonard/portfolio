@@ -3,7 +3,7 @@ import kd from '../kd.gif';
 import gthy from '../mobile.png';
 import coors from '../coorsfield.jpg';
 import woodward from '../woodward.gif';
-import React, { useState } from "react";
+
 
 const experienceStyle = {
     color: "white",
