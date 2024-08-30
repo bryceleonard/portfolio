@@ -25,19 +25,19 @@ export default function Photos() {
         <div style={containerSlide}>
             <Splide aria-label="My Favorite Images">
                 <SplideSlide>
-                    <img style={width} src={zero} alt="Image 1"/>
+                    <img style={width} src={zero} alt="1"/>
                 </SplideSlide>
                 <SplideSlide>
-                    <img style={width} src={one} alt="Image 2"/>
+                    <img style={width} src={one} alt="2"/>
                 </SplideSlide>
                 <SplideSlide>
-                    <img style={width} src={two} alt="Image 3"/>
+                    <img style={width} src={two} alt="3"/>
                 </SplideSlide>
                 <SplideSlide>
-                    <img style={width} src={three} alt="Image 4"/>
+                    <img style={width} src={three} alt="4"/>
                 </SplideSlide>
                 <SplideSlide>
-                    <img style={width} src={four} alt="Image 4"/>
+                    <img style={width} src={four} alt="4"/>
                 </SplideSlide>
             {/* <SplideSlide>
                 <img src="image2.jpg" alt="Image 2"/>

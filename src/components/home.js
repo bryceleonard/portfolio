@@ -26,7 +26,7 @@ const pStyle = {
 const ptop = {
     marginTop: "200px",
     textAlign: "right",
-    marginTop: "200px",
+
     fontSize: "24px",
     display: "inline-block",
 }
