@@ -8,18 +8,6 @@ import Experience from './components/experience.js'
 import Pdf from './BLResume.pdf'
 import $ from 'jquery';
 
-const pStyle =  {
-
-  margin: "0",
-  verticalalign: "middle",
-  lineheight: "50px",
-  display: "inline-block"
-}
-const img = {
-  height: "35px",
-  display: "inline-block",
-}
-
 
 
 const navStyle ={

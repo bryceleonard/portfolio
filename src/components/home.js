@@ -68,7 +68,7 @@ export default function About() {
                     <p style={pStyle}>Let's work together,</p>
             </div>
 
-            <img></img>
+
          </div>
     )
 }   

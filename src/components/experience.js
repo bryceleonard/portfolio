@@ -24,12 +24,7 @@ const h1 = {
 
 }
 
-const ul = {
-    display: "flex", 
-    paddingLeft: "0",
-    justifyContent: "spacearound",
-    liststyletype: "none",
-}
+
 
 const img = {
     width: "975px",
@@ -113,25 +108,25 @@ export default function Experience() {
                     <div className="slideContent">
                         <div   id="kd">
                             <p>Key Data Dashboard is a business intelligence platform used to analyze short-term rental &hotel performance data.</p>
-                            <img style={img} src={kd}></img>
+                            <img  alt="image1"style={img} src={kd}></img>
                         </div>
                         <div  id="cr">One of 30 teams in Major League Baseball. I worked inside the Front Office’s Research and
                                         Development department developing proprietary analytics applications used to create
                                         competitive strategies both on and off the field. 
-                                        <img style={img} src={coors}></img>
+                                        <img  alt="image2"style={img} src={coors}></img>
                         </div>
                                         
                         <div   id="hd"><p>A design and web development firm. Our primary client was Powdr Resorts. Powdr is the parent
                                         company of 10 ski resorts and multiple adventure services. Hoorooh was hired to consolidate 10
                                         different resort websites into one controllable codebase and content management system. </p>
-                                        <img style={img} src={woodward}></img>
+                                        <img  alt="image3"style={img} src={woodward}></img>
                         </div>
                         <div   id="gthy">A guest management & analytics platform for professional property managers. Guests use a
                                         mobile app to access information about the vacation home and recommendations for activities
                                         in the area. Property Managers use a web portal to manage information about their inventory
                                         and access rich analytics on guest booking trends. Over 300 property managers were using the
                                         platform when our company was acquired. 
-                                        <img style={img} src={gthy}></img>
+                                        <img  alt="image4"style={img} src={gthy}></img>
                         </div>
                     </div>
                 </div>
