@@ -161,7 +161,7 @@ export default function Experience() {
                                         
                         <div style={contain} id="hd">
                             <div className="text">
-                                <h3 style={h3}>Full-Stack Developer<span style={span}>March 2016 - January 2018</span></h3>
+                                <h3 style={h3}>Full-Stack Developer<span style={span}>2016 - 2018</span></h3>
                                 <p style={p}>A design and web development firm. Our primary client was Powdr Resorts. Powdr is the parent
                                     company of 10 ski resorts and multiple adventure services. Hoorooh was hired to consolidate 10
                                     different resort websites into one controllable codebase and content management system.
@@ -188,7 +188,7 @@ export default function Experience() {
                         </div>
                         <div style={contain} id="gthy">
                         <div className="text">
-                                <h3 style={h3}>Product Manager<span style={span}>2021 - 2024</span></h3>
+                                <h3 style={h3}>Product Manager<span style={span}>2010 - 2015</span></h3>
                                 <p style={p}> A guest management & analytics platform for professional property managers. Guests use a
                                         mobile app to access information about the vacation home and recommendations for activities
                                         in the area. Property Managers use a web portal to manage information about their inventory
