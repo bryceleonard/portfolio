@@ -97,25 +97,23 @@
   border-radius: 10px; 
 }
 
-.slideContent div {
-  min-height: 80vh;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+.slideContent .text {
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 25px;
+  margin-top: 25px;
+  text-align: left;
+
 }
 
 
 .slideContent div p{
-  width: 25%;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
+
 }
 
 .slideContent div img{
-  width: 850px;
-  display: inline-block;
-  vertical-align: top;
+
 }
 
 .slideNav {

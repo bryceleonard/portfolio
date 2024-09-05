@@ -1,9 +1,18 @@
 import $ from 'jquery';
 import kd from '../kd.gif';
-import gthy from '../mobile.png';
+import gthy from '../gthy.jpg';
 import coors from '../coorsfield.jpg';
 import woodward from '../woodward.gif';
+import copper from '../copper.gif';
+import powdr from '../powdr.gif';
+import eldora from '../eldora.gif';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 
+
+const span = {
+    display: "block",
+    fontSize: "16px",
+}
 
 const experienceStyle = {
     color: "white",
@@ -20,17 +29,41 @@ const h1 = {
     display: "inline-block",
     paddingLeft: "25px",
     width: "45%",
+}
 
+const h3 = {
+    fontSize: "28px",
+    marginTop: "0px",
+}
+
+const containerSlide = {
+    width: "56%",
+    display: "inline-block",
+    verticalAlign: "top",
+
+}
+const width = {
+    width: "100%",
 
 }
 
+const p = {
+    borderBottom: "2px dashed white",
+    paddingBottom: "15px",
+    fontSize: "14px",
+    width: "90%",
+
+}
 
 
 const img = {
-    width: "975px",
-    height: "575px",
+    width: "58%",
+    height: "auto",
 }
 
+const contain = {
+    width: "100%",
+}
 
 
 
@@ -92,7 +125,6 @@ export default function Experience() {
         
     return (
         <div>
-
             <div style={experienceStyle}>
                 <h1 style={h1}>Experience</h1>
                 <div className="slideNav">
@@ -101,32 +133,72 @@ export default function Experience() {
                         <li  id="hd_item" >Hoorooh Digital</li> 
                         <li  id="gthy_item" >Glad to Have You</li>
                         <li  id="cr_item" >Colorado Rockies</li>
+
                     </ul>
                 </div>
                 <div className="slideContainer">
-
                     <div className="slideContent">
-                        <div   id="kd">
-                            <p>Key Data Dashboard is a business intelligence platform used to analyze short-term rental &hotel performance data.</p>
+                        <div style={contain} id="kd">
+                            <div className="text">
+                                <h3 style={h3}>Director of Product Management<span style={span}>2021 - 2024</span></h3>
+                                <p style={p}>Key Data Dashboard is a business intelligence platform used to analyze short-term rental &hotel performance data. Key Data combines rental data from OTA sites with reservation data sourced directly from 65+ of the world’s top property management systems. </p>
+                                <p style={p}>Successfully delivered to market 2 unique product offerings accounting for 40% of company’s monthly recurring revenue after designing new system and leading transition to new platform (1.5-year project). New tool has increased site performance, optimized user experiences, improved data access and insights. </p>
+                                <p style={p}>Expedited time to value and reduced customer churn after creating new methods for clients to download and share prebuilt dashboard templates.</p>
+                                <p style={p}>Earned Best in Show Award (out of 13 total technical vendors) from Vacation Rental Management Association International during industry’s annual conference.</p>
+                            </div>
                             <img  alt="image1"style={img} src={kd}></img>
                         </div>
-                        <div  id="cr">One of 30 teams in Major League Baseball. I worked inside the Front Office’s Research and
-                                        Development department developing proprietary analytics applications used to create
-                                        competitive strategies both on and off the field. 
-                                        <img  alt="image2"style={img} src={coors}></img>
+                        <div style={contain} id="cr">
+                            <div className="text">
+                                    <h3 style={h3}>Full Stack Developer & Data Analyst<span style={span}>2018 - 2021</span></h3>
+                                    <p style={p}>Saved organization $100K+ annually in third-party software subscriptions after building and maintaining internal web application’s as sole Full-Stack Developer.</p>
+                                    <p style={p}>Optimized development function, increased efficiencies, and strengthened decision making by introducing Agile methodology and SCRUM workflows across organization, serving as SCRUM Master</p>
+                                    <p style={p}>Helped define strategies for salary arbitration, amateur drafts, and in-game completion by analyzing and presenting historical data/insights.</p>
+                                    <p style={p}>Participated in organization’s salary arbitration case, which saved team $575K.</p>
+                                </div>
+
+                                    <img  alt="image2"style={img} src={coors}></img>
                         </div>
                                         
-                        <div   id="hd"><p>A design and web development firm. Our primary client was Powdr Resorts. Powdr is the parent
-                                        company of 10 ski resorts and multiple adventure services. Hoorooh was hired to consolidate 10
-                                        different resort websites into one controllable codebase and content management system. </p>
-                                        <img  alt="image3"style={img} src={woodward}></img>
+                        <div style={contain} id="hd">
+                            <div className="text">
+                                <h3 style={h3}>Full-Stack Developer<span style={span}>March 2016 - January 2018</span></h3>
+                                <p style={p}>A design and web development firm. Our primary client was Powdr Resorts. Powdr is the parent
+                                    company of 10 ski resorts and multiple adventure services. Hoorooh was hired to consolidate 10
+                                    different resort websites into one controllable codebase and content management system.
+                                </p>
+                                <p style={p}>Played instrumental role in consolidating Powdr’s 10 resorts into single controllable codebase (Headless Drupal) and content management system, transforming company performance and revolutionizing content creation. This platform is still used by Powdr today.</p>
+                                <p style={p}>Ensured security, scalability, and maintainability of applications via appropriate development practices and tools. </p>
+                            </div>
+                            <div style={containerSlide}>
+                                <Splide aria-label="My Favorite Images">
+                                    <SplideSlide>
+                                        <img style={width} src={copper} alt="1"/>
+                                    </SplideSlide>
+                                    <SplideSlide>
+                                        <img style={width} src={woodward} alt="2"/>
+                                    </SplideSlide>
+                                    <SplideSlide>
+                                        <img style={width} src={powdr} alt="3"/>
+                                    </SplideSlide>
+                                    <SplideSlide>
+                                        <img style={width} src={eldora} alt="4"/>
+                                    </SplideSlide>
+                                </Splide>
+                            </div>
                         </div>
-                        <div   id="gthy">A guest management & analytics platform for professional property managers. Guests use a
+                        <div style={contain} id="gthy">
+                        <div className="text">
+                                <h3 style={h3}>Product Manager<span style={span}>2021 - 2024</span></h3>
+                                <p style={p}> A guest management & analytics platform for professional property managers. Guests use a
                                         mobile app to access information about the vacation home and recommendations for activities
                                         in the area. Property Managers use a web portal to manage information about their inventory
                                         and access rich analytics on guest booking trends. Over 300 property managers were using the
-                                        platform when our company was acquired. 
-                                        <img  alt="image4"style={img} src={gthy}></img>
+                                        platform when our company was acquired</p>
+                                <p style={p}>Created initial product design and roadmap used to raise $1M in Series A funding. Played role in positioning company for acquisition by Home Away/Expedia Group (for $17M) after 2 years in operation. </p>
+                                <p style={p}>Increased frequency of product updates and bug fixes via transitioning team from Waterfall to Agile workflow.</p>
+                            </div>
+                             <img  alt="image4"style={img} src={gthy}></img>
                         </div>
                     </div>
                 </div>

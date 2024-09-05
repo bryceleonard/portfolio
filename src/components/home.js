@@ -23,6 +23,16 @@ const pStyle = {
     display: "inline-block",
 }
 
+const pStyleWork = { 
+
+    textAlign: "right",
+    margin: "15px 0",
+
+    display: "inline-block",
+    width: '100%',
+    fontSize: '32px',
+}
+
 const ptop = {
     marginTop: "200px",
     textAlign: "right",
@@ -48,8 +58,7 @@ export default function About() {
     return (
         <div style={aboutStyle}>
             <div style={h3Container}>
-                <h3 style={h3Style}>Hi there, I'm Bryce! I’m a process-oriented Product Manager & Developer based in Denver, Colorado. I enjoy designing and building long-lasting web platforms.</h3>
-                <h3>Let's work together</h3>
+                <h3 style={h3Style}>Hi, my name is Bryce! I'm a process-oriented Product Manager & Developer based in Denver, Colorado. I enjoy designing and building long-lasting web platforms.</h3>
      
             </div>
             <div style={pContainer}>
@@ -65,7 +74,7 @@ export default function About() {
                     Driven by curiosity and a passion for improvement, my entrepreneurial mindset empowers me to innovate fearlessly. I have a proven track record for delivering enterprise-level platforms in complex 
                     industries.
                     </p>
-                    <p style={pStyle}>Let's work together,</p>
+                    <p style={pStyleWork}>Let's work together</p>
             </div>
 
 
