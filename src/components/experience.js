@@ -8,7 +8,6 @@ import powdr from '../powdr.gif';
 import eldora from '../eldora.gif';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
-
 const span = {
     display: "block",
     fontSize: "16px",
