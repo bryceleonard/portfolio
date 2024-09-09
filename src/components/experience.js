@@ -13,22 +13,8 @@ const span = {
     fontSize: "16px",
 }
 
-const experienceStyle = {
-    color: "white",
-    background: "#141414",
-    width: "95%",
-    margin: "0 auto",
-    borderRadius: "10px 10px 0 0",
-}
 
-const h1 = {
-    fontSize: "100px",
-    textAlign:  "left",
-    margin: "0px",
-    display: "inline-block",
-    paddingLeft: "25px",
-    width: "45%",
-}
+
 
 const h3 = {
     fontSize: "28px",
@@ -55,14 +41,8 @@ const p = {
 }
 
 
-const img = {
-    width: "58%",
-    height: "auto",
-}
 
-const contain = {
-    width: "100%",
-}
+
 
 
 
@@ -124,9 +104,10 @@ export default function Experience() {
         
     return (
         <div>
-            <div style={experienceStyle}>
-                <h1 style={h1}>Experience</h1>
+            <div className="experienceStyle">
+                <h1>Experience</h1>
                 <div className="slideNav">
+
                     <ul className="hideDec">
                         <li  id="kd_item" >Key Data Dashboard</li>
                         <li  id="hd_item" >Hoorooh Digital</li> 
@@ -137,7 +118,7 @@ export default function Experience() {
                 </div>
                 <div className="slideContainer">
                     <div className="slideContent">
-                        <div style={contain} id="kd">
+                        <div className="contain" id="kd">
                             <div className="text">
                                 <h3 style={h3}>Director of Product Management<span style={span}>2021 - 2024</span></h3>
                                 <p style={p}>Key Data Dashboard is a business intelligence platform used to analyze short-term rental &hotel performance data. Key Data combines rental data from OTA sites with reservation data sourced directly from 65+ of the world’s top property management systems. </p>
@@ -145,9 +126,9 @@ export default function Experience() {
                                 <p style={p}>Expedited time to value and reduced customer churn after creating new methods for clients to download and share prebuilt dashboard templates.</p>
                                 <p style={p}>Earned Best in Show Award (out of 13 total technical vendors) from Vacation Rental Management Association International during industry’s annual conference.</p>
                             </div>
-                            <img  alt="image1"style={img} src={kd}></img>
+                            <img  alt="image1"className="img" src={kd}></img>
                         </div>
-                        <div style={contain} id="cr">
+                        <div className="contain" id="cr">
                             <div className="text">
                                     <h3 style={h3}>Full Stack Developer & Data Analyst<span style={span}>2018 - 2021</span></h3>
                                     <p style={p}>Saved organization $100K+ annually in third-party software subscriptions after building and maintaining internal web application’s as sole Full-Stack Developer.</p>
@@ -156,10 +137,10 @@ export default function Experience() {
                                     <p style={p}>Participated in organization’s salary arbitration case, which saved team $575K.</p>
                                 </div>
 
-                                    <img  alt="image2"style={img} src={coors}></img>
+                                    <img  alt="image2"className="img" src={coors}></img>
                         </div>
                                         
-                        <div style={contain} id="hd">
+                        <div className="contain" id="hd">
                             <div className="text">
                                 <h3 style={h3}>Full-Stack Developer<span style={span}>2016 - 2018</span></h3>
                                 <p style={p}>A design and web development firm. Our primary client was Powdr Resorts. Powdr is the parent
@@ -186,7 +167,7 @@ export default function Experience() {
                                 </Splide>
                             </div>
                         </div>
-                        <div style={contain} id="gthy">
+                        <div className="contain" id="gthy">
                         <div className="text">
                                 <h3 style={h3}>Product Manager<span style={span}>2010 - 2015</span></h3>
                                 <p style={p}> A guest management & analytics platform for professional property managers. Guests use a
@@ -197,7 +178,7 @@ export default function Experience() {
                                 <p style={p}>Created initial product design and roadmap used to raise $1M in Series A funding. Played role in positioning company for acquisition by Home Away/Expedia Group (for $17M) after 2 years in operation. </p>
                                 <p style={p}>Increased frequency of product updates and bug fixes via transitioning team from Waterfall to Agile workflow.</p>
                             </div>
-                             <img  alt="image4"style={img} src={gthy}></img>
+                             <img  alt="image4"className="img" src={gthy}></img>
                         </div>
                     </div>
                 </div>

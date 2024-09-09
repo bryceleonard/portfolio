@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import "@fontsource/poppins";
 import About from './components/about.js';
 
@@ -9,33 +9,7 @@ import Pdf from './BLResume.pdf'
 import $ from 'jquery';
 
 
-
-const navStyle ={
-
-  display: "block",
-  background: "white",
-
-  alignItems: "center",
-  overflow: "hidden",
-  width: "100%",
-  margin: "auto",
-  top: "0",
-  position: "fixed",
-  boxShadow: "0px 3px 3px 0px rgba(20,20,20,0.45)",
-
-
-}
-
-const ul = {
-  float: "right",
-  paddingRight: "50px",
-
-}
-
-
 function App() {
-
-  
   const handleClickScroll = (event) => {
     const section_id = event.currentTarget.getAttribute("section");
     const element = document.getElementById(section_id);
@@ -72,8 +46,8 @@ function App() {
   return (
     <div className="App">
       <section id="top">
-        <div style={navStyle}>
-          <ul style={ul}>
+        <div className="navStyle">
+          <ul>
               <li onClick={handleClickScroll} section="top" className="listStyle">Home</li>
               <li className="listStyle" onClick={handleClickScroll} section="experience" >Experience</li>
               <li className="listStyle" onClick={handleClickScroll} section="about">About Me</li>

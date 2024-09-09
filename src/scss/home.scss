@@ -1,0 +1,72 @@
+.sectionStyle {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    color: white; 
+    .headlineContainer {
+        width: 55%;
+        display: inline-block;
+        vertical-align: top;
+        @media (max-width: 460px) {
+            width: 100%;
+          }
+        .h3 {
+            text-align: left;
+            margin-top: 250px;
+            font-size: 48px;
+            @media (max-width: 460px) {
+                font-size: 24px;
+                margin-top: 50px;
+                margin-left: 25px;
+              }
+        }
+    } 
+    .pContainer {
+        width: 35%;
+        @media (max-width: 460px) {
+            width: 90%;
+            text-align: left;
+            
+          }
+        display: inline-block;
+        p {
+            text-align: right;
+            display: inline-block;
+            font-size: 24px;
+            @media (max-width: 460px) {
+                text-align: left;
+              }
+        }
+
+        .ptop  {
+            margin-top: 250px;
+            font-size: 24px;
+            @media (max-width: 460px) {
+                font-size: 18px;
+                margin-top: 0px;
+              }
+
+        }
+        .pStyle { 
+            margin: 15px 0;
+            font-size: 24px;
+            @media (max-width: 460px) {
+                font-size: 18px;
+
+              }
+
+        }
+        .pStyleWork  { 
+            margin: 15px 0;
+            width: 100%;
+            font-size: 32px;
+            @media (max-width: 460px) {
+                font-size: 21px;
+
+              }
+        }   
+    }
+}
+
+
+

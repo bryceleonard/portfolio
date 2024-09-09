@@ -41,14 +41,12 @@
   text-decoration: none;
   font-size: 14px;
   margin:0 18px;
-  padding: 5px 20px;
   display: inline-block;
   cursor: pointer;
   border-radius: 4px;
   padding: 0;
   line-height: 50px;
 
-  padding: 0px 15px;
 }
 
 .resume {
@@ -57,6 +55,11 @@
   -webkit-box-shadow: inset 2px 2px 2px 0px rgba(20,20,20,0.35);
   -moz-box-shadow: inset 2px 2px 2px 0px rgba(20,20,20,0.35);
   box-shadow: inset 2px 2px 2px 0px rgba(20,20,20,0.35);
+  @media (max-width: 460px) {
+    box-shadow: none;
+    color: #141414;
+    background: none;
+  }
 }
 
 .resume:hover {
@@ -104,23 +107,19 @@
   padding: 0 25px;
   margin-top: 25px;
   text-align: left;
-
-}
-
-
-.slideContent div p{
-
-}
-
-.slideContent div img{
+  @media (max-width: 1260px) {
+    width: 100%;
+  }
 
 }
 
 .slideNav {
-  width: 50%;
+  width: 70%;
+  @media (max-width: 1260px) {
+    width: 100%;
+  }
   display: inline-block;
   vertical-align: text-bottom;
   font-size: 14px;
-
-
+  margin-top: 15px;
 }
