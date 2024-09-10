@@ -10,7 +10,7 @@ export default function About() {
                 <h1 >About Me</h1>
                     <div className="container">
                         <p >
-                                 a passionate product manager with over 14 years of experience in the tech industry, blending my expertise as both a product manager and software engineer. My journey began with a BBA from Belmont University, where I developed a strong foundation in business and technology.
+                                 A passionate product manager with over 14 years of experience in the tech industry, blending my expertise as both a product manager and software engineer. My journey began with a BBA from Belmont University, where I developed a strong foundation in business and technology.
                             </p>
                             <p >
                                 I’m fortunate to share my life with my wonderful wife, Lindsey, and our two energetic kids, Theo and Remi. When I’m not working, you’ll likely find me immersed in my favorite hobbies. I’m an avid photographer with a love for medium format film, with a focus on landscapes. 
