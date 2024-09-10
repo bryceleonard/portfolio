@@ -11,12 +11,12 @@ const aboutStyle = {
 }
 
 const h1 = {
-    fontSize: "100px",
+    fontSize: "58px",
     textAlign:  "left",
     margin: "0px",
-
+    marginBottom: "25px",
+    borderBottom: "1px solid white",
     paddingLeft: "25px",
-    width: "45%",
 }
 
 const p = {

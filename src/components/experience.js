@@ -16,10 +16,7 @@ const span = {
 
 
 
-const h3 = {
-    fontSize: "28px",
-    marginTop: "0px",
-}
+
 
 const containerSlide = {
     width: "56%",
@@ -37,6 +34,8 @@ const p = {
     paddingBottom: "15px",
     fontSize: "14px",
     width: "90%",
+    margin: "10px 25px",
+
 
 }
 
@@ -105,8 +104,9 @@ export default function Experience() {
     return (
         <div>
             <div className="experienceStyle">
-                <h1>Experience</h1>
+
                 <div className="slideNav">
+                    <h1>Experience</h1>
 
                     <ul className="hideDec">
                         <li  id="kd_item" >Key Data Dashboard</li>
@@ -120,7 +120,7 @@ export default function Experience() {
                     <div className="slideContent">
                         <div className="contain" id="kd">
                             <div className="text">
-                                <h3 style={h3}>Director of Product Management<span style={span}>2021 - 2024</span></h3>
+                                <h3>Director of Product Management<span style={span}>2021 - 2024</span></h3>
                                 <p style={p}>Key Data Dashboard is a business intelligence platform used to analyze short-term rental &hotel performance data. Key Data combines rental data from OTA sites with reservation data sourced directly from 65+ of the world’s top property management systems. </p>
                                 <p style={p}>Successfully delivered to market 2 unique product offerings accounting for 40% of company’s monthly recurring revenue after designing new system and leading transition to new platform (1.5-year project). New tool has increased site performance, optimized user experiences, improved data access and insights. </p>
                                 <p style={p}>Expedited time to value and reduced customer churn after creating new methods for clients to download and share prebuilt dashboard templates.</p>
@@ -130,7 +130,7 @@ export default function Experience() {
                         </div>
                         <div className="contain" id="cr">
                             <div className="text">
-                                    <h3 style={h3}>Full Stack Developer & Data Analyst<span style={span}>2018 - 2021</span></h3>
+                                    <h3>Full Stack Developer & Data Analyst<span style={span}>2018 - 2021</span></h3>
                                     <p style={p}>Saved organization $100K+ annually in third-party software subscriptions after building and maintaining internal web application’s as sole Full-Stack Developer.</p>
                                     <p style={p}>Optimized development function, increased efficiencies, and strengthened decision making by introducing Agile methodology and SCRUM workflows across organization, serving as SCRUM Master</p>
                                     <p style={p}>Helped define strategies for salary arbitration, amateur drafts, and in-game completion by analyzing and presenting historical data/insights.</p>
@@ -142,7 +142,7 @@ export default function Experience() {
                                         
                         <div className="contain" id="hd">
                             <div className="text">
-                                <h3 style={h3}>Full-Stack Developer<span style={span}>2016 - 2018</span></h3>
+                                <h3>Full-Stack Developer<span style={span}>2016 - 2018</span></h3>
                                 <p style={p}>A design and web development firm. Our primary client was Powdr Resorts. Powdr is the parent
                                     company of 10 ski resorts and multiple adventure services. Hoorooh was hired to consolidate 10
                                     different resort websites into one controllable codebase and content management system.
@@ -169,7 +169,7 @@ export default function Experience() {
                         </div>
                         <div className="contain" id="gthy">
                         <div className="text">
-                                <h3 style={h3}>Product Manager<span style={span}>2010 - 2015</span></h3>
+                                <h3>Product Manager<span style={span}>2010 - 2015</span></h3>
                                 <p style={p}> A guest management & analytics platform for professional property managers. Guests use a
                                         mobile app to access information about the vacation home and recommendations for activities
                                         in the area. Property Managers use a web portal to manage information about their inventory

@@ -44,7 +44,7 @@
   display: inline-block;
   cursor: pointer;
   border-radius: 4px;
-  padding: 0;
+
   line-height: 50px;
 
 }
@@ -52,59 +52,58 @@
 .resume {
   background:#32CD32;
   color: white;
-  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(20,20,20,0.35);
-  -moz-box-shadow: inset 2px 2px 2px 0px rgba(20,20,20,0.35);
-  box-shadow: inset 2px 2px 2px 0px rgba(20,20,20,0.35);
-  @media (max-width: 460px) {
-    box-shadow: none;
-    color: #141414;
-    background: none;
-  }
+  padding: 0 15px;
+
 }
 
-.resume:hover {
-  -webkit-box-shadow: -3px -3px 3px 0px rgba(20,20,20,0.35);
-  -moz-box-shadow: -2px -2px 2px 0px rgba(20,20,20,0.35);
-  box-shadow: -3px -3px 3px 0px rgba(20,20,20,0.35);
-}
 
 
 .expereinceSection {
   padding-top: 130px;
+  text-align: left;
+  @media (max-width: 460px) {
+    padding-top: 100px;
+  }
 }
 
 
 .activeList {
-  background: white;
-  border-radius: 10px;
-  color: #141414;
+  background:#32CD32;
+  border-radius: 4px;
+  color: white;
   list-style: none;
 }
 
 .hideDec {
-  list-style-type: none;
   display: flex;
+  text-align: right;
+  height: 50px;
   justify-content: space-around;
-
+  width: 70%;
+  margin-top: 40px;
 }
 
+
+
+
 .hideDec li {
-  padding: 15px;
   cursor: pointer;
-  
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 10px;
 }
 
 .hideDec li:hover {
   background-color: #32CD32;
   color: white;
-  border-radius: 10px; 
+  border-radius: 4px; 
 }
 
 .slideContent .text {
   width: 35%;
   display: inline-block;
   vertical-align: top;
-  padding: 0 25px;
+
   margin-top: 25px;
   text-align: left;
   @media (max-width: 1260px) {
@@ -114,12 +113,10 @@
 }
 
 .slideNav {
-  width: 70%;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
   @media (max-width: 1260px) {
     width: 100%;
   }
-  display: inline-block;
-  vertical-align: text-bottom;
-  font-size: 14px;
-  margin-top: 15px;
 }
