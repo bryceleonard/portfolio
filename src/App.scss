@@ -53,6 +53,11 @@
   background:#32CD32;
   color: white;
   padding: 0 15px;
+  @media (max-width: 460px) {
+    background: transparent;
+    color: #141414;
+    padding: 0;
+  }
 
 }
 
@@ -74,14 +79,6 @@
   list-style: none;
 }
 
-.hideDec {
-  display: flex;
-  text-align: right;
-  height: 50px;
-  justify-content: space-around;
-  width: 70%;
-  margin-top: 40px;
-}
 
 
 
@@ -118,5 +115,9 @@
   justify-content: space-between;
   @media (max-width: 1260px) {
     width: 100%;
+  }
+  @media (max-width: 460px) {
+    display: block !important;
+
   }
 }
