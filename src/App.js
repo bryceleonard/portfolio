@@ -48,7 +48,7 @@ function App() {
       <section id="top">
         <div className="navStyle">
           <ul>
-              <li onClick={handleClickScroll} section="top" className="listStyle">Home</li>
+              <li onClick={handleClickScroll} section="top" className="listStyle home">Home</li>
               <li className="listStyle" onClick={handleClickScroll} section="experience" >Experience</li>
               <li className="listStyle" onClick={handleClickScroll} section="about">About Me</li>
               <a className="listStyle resume" href={Pdf} without="true" rel="noopener noreferrer" target="_blank">Resume</a>

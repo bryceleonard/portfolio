@@ -122,3 +122,9 @@
 
   }
 }
+
+.home {
+  @media (max-width: 460px) {
+    display: none;
+  }
+}
