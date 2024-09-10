@@ -18,12 +18,6 @@ const span = {
 
 
 
-const containerSlide = {
-    width: "56%",
-    display: "inline-block",
-    verticalAlign: "top",
-
-}
 const width = {
     width: "100%",
 
@@ -150,7 +144,7 @@ export default function Experience() {
                                 <p style={p}>Played instrumental role in consolidating Powdr’s 10 resorts into single controllable codebase (Headless Drupal) and content management system, transforming company performance and revolutionizing content creation. This platform is still used by Powdr today.</p>
                                 <p style={p}>Ensured security, scalability, and maintainability of applications via appropriate development practices and tools. </p>
                             </div>
-                            <div style={containerSlide}>
+                            <div className="containerSlide">
                                 <Splide aria-label="My Favorite Images">
                                     <SplideSlide>
                                         <img style={width} src={copper} alt="1"/>

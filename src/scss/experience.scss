@@ -105,6 +105,18 @@
     }
 }
 
+
+.containerSlide  {
+    width: 56%;
+    @media (max-width: 460px) {
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+    }
+    display: inline-block;
+    vertical-align: top;
+
+}
   
  
   
