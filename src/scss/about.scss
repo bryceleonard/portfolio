@@ -1,0 +1,42 @@
+.aboutStyle  {
+    color: white;
+    background: #141414;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+    min-height: 100vh;
+    margin-bottom: 50px;
+    .moveDown {
+        padding-top: 100px;
+        h1 {
+            font-size: 58px;
+            text-align:  left;
+            margin: 0px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid white;
+            padding-left: 25px;
+            @media (max-width: 460px) {
+                font-size: 28px;
+            }
+        }
+        .container  {
+            width: 45%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            padding-right: 100px;
+            @media (max-width: 460px) {
+                width: 95%;
+                padding: 0px;
+            }
+            p  {
+                width: 100%;
+            }
+            
+        }
+    }
+}
+
+
+
+

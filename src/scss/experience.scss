@@ -19,6 +19,9 @@
             margin-bottom: 0px;
 
           }
+          @media (max-width: 460px) {
+              margin-bottom: 15px;
+          }
     }
     h3 {
             font-size: 28px;
@@ -86,11 +89,15 @@
 
 .slideContent {
     margin-top: 50px;
+    @media (max-width: 460px) {
+        margin-top: 0px;
+    }
     .contain {
         display: flex;
         justify-content: space-evenly;
         @media (max-width: 460px) {
             display: block;
+ 
         }
     }
 }
