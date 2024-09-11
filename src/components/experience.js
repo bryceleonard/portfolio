@@ -7,7 +7,6 @@ import copper from '../copper.gif';
 import powdr from '../powdr.gif';
 import eldora from '../eldora.gif';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import About from './about.js';
 
 const span = {
     display: "block",
