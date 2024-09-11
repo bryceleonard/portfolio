@@ -24,7 +24,7 @@
           }
     }
     h3 {
-            font-size: 28px;
+            font-size: 24px;
             margin-top: 0px;
             width: 90%;
             margin-left: 25px;
@@ -35,7 +35,13 @@
             }
 
     }
-  }
+    h2 {
+        font-size: 36px;
+        margin-left: 25px;
+        text-decoration: underline;
+    }
+ 
+}
   
 .img {
     width: 58%;
@@ -97,7 +103,10 @@
     }
     .contain {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 0 25px 50px 15px;
+        margin-bottom: 25px;
+        border-bottom: 2px dashed white;
         @media (max-width: 460px) {
             display: block;
  
@@ -136,3 +145,6 @@
 //     vertical-align: text-bottom;
 //     font-size: 14px;
 //   }
+
+
+

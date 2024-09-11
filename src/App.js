@@ -1,11 +1,11 @@
 
 import './App.scss';
 import "@fontsource/poppins";
-import About from './components/about.js';
 
 import Home from './components/home.js'
 import Experience from './components/experience.js'
 import Pdf from './BLResume.pdf'
+import About from './components/about.js'
 import $ from 'jquery';
 
 
@@ -66,7 +66,7 @@ function App() {
         <Experience />
       </section>
       <section id="about">
-        <About />
+          <About />
       </section>
     </div>
   );

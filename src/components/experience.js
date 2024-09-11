@@ -1,4 +1,4 @@
-import $ from 'jquery';
+
 import kd from '../kd.gif';
 import gthy from '../gthy.jpg';
 import coors from '../coorsfield.jpg';
@@ -7,6 +7,7 @@ import copper from '../copper.gif';
 import powdr from '../powdr.gif';
 import eldora from '../eldora.gif';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import About from './about.js';
 
 const span = {
     display: "block",
@@ -41,59 +42,59 @@ const p = {
 
 export default function Experience() {
 
-    $(function() {
-        $('div[id^=kd]').show();
-        $('li[id^=kd_item]').addClass("activeList");
-        $('div[id^=cr').hide();
-        $('div[id^=hd').hide();
-        $('div[id^=gthy').hide();
-        //keydata
-        $('#kd_item').click(function() {
-            $('div[id^=cr]').hide();
-            $('div[id^=hd]').hide();
-            $('div[id^=gthy]').hide();
-            $('li[id^=kd_item]').addClass("activeList");
-            $('li[id^=cr_item]').removeClass("activeList");
-            $('li[id^=hd_item]').removeClass("activeList");
-            $('li[id^=gthy_item]').removeClass("activeList");
-            $('#kd').show();
-        });
-        //rockies
-        $('#cr_item').click(function() {
-            $('div[id^=kd').hide();
-            $('li[id^=cr_item]').addClass("activeList");
-            $('li[id^=kd_item]').removeClass("activeList");
-            $('li[id^=hd_item]').removeClass("activeList");
-            $('li[id^=gthy_item]').removeClass("activeList");
-            $('div[id^=hd').hide();
-            $('div[id^=gthy').hide();
-            $('#cr').show();
-        });
-        //hd
-        $('#hd_item').click(function() {
-            $('div[id^=cr]').hide();
-            $('div[id^=kd]').hide();
-            $('div[id^=gthy]').hide();
-            $('li[id^=hd_item]').addClass("activeList");
-            $('li[id^=cr_item]').removeClass("activeList");
-            $('li[id^=kd_item]').removeClass("activeList");
-            $('li[id^=gthy_item]').removeClass("activeList");
-            $('#hd').show();
-        });
-        //gthy
-        $('#gthy_item').click(function() {
-            $('li[id^=gthy_item]').addClass("activeList");
-            $('li[id^=cr_item]').removeClass("activeList");
-            $('li[id^=hd_item]').removeClass("activeList");
-            $('li[id^=kd_item]').removeClass("activeList");
-            $('div[id^=kd').hide();
-            $('div[id^=cr').hide();
-            $('div[id^=hd').hide();
-            $('#gthy').show();
-        });
+    // $(function() {
+    //     $('div[id^=kd]').show();
+    //     $('li[id^=kd_item]').addClass("activeList");
+    //     $('div[id^=cr').hide();
+    //     $('div[id^=hd').hide();
+    //     $('div[id^=gthy').hide();
+    //     //keydata
+    //     $('#kd_item').click(function() {
+    //         $('div[id^=cr]').hide();
+    //         $('div[id^=hd]').hide();
+    //         $('div[id^=gthy]').hide();
+    //         $('li[id^=kd_item]').addClass("activeList");
+    //         $('li[id^=cr_item]').removeClass("activeList");
+    //         $('li[id^=hd_item]').removeClass("activeList");
+    //         $('li[id^=gthy_item]').removeClass("activeList");
+    //         $('#kd').show();
+    //     });
+    //     //rockies
+    //     $('#cr_item').click(function() {
+    //         $('div[id^=kd').hide();
+    //         $('li[id^=cr_item]').addClass("activeList");
+    //         $('li[id^=kd_item]').removeClass("activeList");
+    //         $('li[id^=hd_item]').removeClass("activeList");
+    //         $('li[id^=gthy_item]').removeClass("activeList");
+    //         $('div[id^=hd').hide();
+    //         $('div[id^=gthy').hide();
+    //         $('#cr').show();
+    //     });
+    //     //hd
+    //     $('#hd_item').click(function() {
+    //         $('div[id^=cr]').hide();
+    //         $('div[id^=kd]').hide();
+    //         $('div[id^=gthy]').hide();
+    //         $('li[id^=hd_item]').addClass("activeList");
+    //         $('li[id^=cr_item]').removeClass("activeList");
+    //         $('li[id^=kd_item]').removeClass("activeList");
+    //         $('li[id^=gthy_item]').removeClass("activeList");
+    //         $('#hd').show();
+    //     });
+    //     //gthy
+    //     $('#gthy_item').click(function() {
+    //         $('li[id^=gthy_item]').addClass("activeList");
+    //         $('li[id^=cr_item]').removeClass("activeList");
+    //         $('li[id^=hd_item]').removeClass("activeList");
+    //         $('li[id^=kd_item]').removeClass("activeList");
+    //         $('div[id^=kd').hide();
+    //         $('div[id^=cr').hide();
+    //         $('div[id^=hd').hide();
+    //         $('#gthy').show();
+    //     });
     
     
-    })
+    // })
         
     return (
         <div>
@@ -102,18 +103,19 @@ export default function Experience() {
                 <div className="slideNav">
                     <h1>Experience</h1>
 
-                    <ul className="hideDec">
+                    {/* <ul className="hideDec">
                         <li  id="kd_item" >Key Data Dashboard</li>
                         <li  id="hd_item" >Hoorooh Digital</li> 
                         <li  id="gthy_item" >Glad to Have You</li>
                         <li  id="cr_item" >Colorado Rockies</li>
 
-                    </ul>
+                    </ul> */}
                 </div>
                 <div className="slideContainer">
                     <div className="slideContent">
                         <div className="contain" id="kd">
                             <div className="text">
+                                <h2>Key Data Dashboard</h2>
                                 <h3>Director of Product Management<span style={span}>2021 - 2024</span></h3>
                                 <p style={p}>Key Data Dashboard is a business intelligence platform used to analyze short-term rental &hotel performance data. Key Data combines rental data from OTA sites with reservation data sourced directly from 65+ of the world’s top property management systems. </p>
                                 <p style={p}>Successfully delivered to market 2 unique product offerings accounting for 40% of company’s monthly recurring revenue after designing new system and leading transition to new platform (1.5-year project). New tool has increased site performance, optimized user experiences, improved data access and insights. </p>
@@ -124,6 +126,7 @@ export default function Experience() {
                         </div>
                         <div className="contain" id="cr">
                             <div className="text">
+                                    <h2>Colorado Rockies</h2>
                                     <h3>Full Stack Developer & Data Analyst<span style={span}>2018 - 2021</span></h3>
                                     <p style={p}>Saved organization $100K+ annually in third-party software subscriptions after building and maintaining internal web application’s as sole Full-Stack Developer.</p>
                                     <p style={p}>Optimized development function, increased efficiencies, and strengthened decision making by introducing Agile methodology and SCRUM workflows across organization, serving as SCRUM Master</p>
@@ -136,6 +139,7 @@ export default function Experience() {
                                         
                         <div className="contain" id="hd">
                             <div className="text">
+                                <h2>Hoorooh Digital</h2>
                                 <h3>Full-Stack Developer<span style={span}>2016 - 2018</span></h3>
                                 <p style={p}>A design and web development firm. Our primary client was Powdr Resorts. Powdr is the parent
                                     company of 10 ski resorts and multiple adventure services. Hoorooh was hired to consolidate 10
@@ -163,6 +167,7 @@ export default function Experience() {
                         </div>
                         <div className="contain" id="gthy">
                         <div className="text">
+                                <h2>Glad To Have You</h2>
                                 <h3>Product Manager<span style={span}>2010 - 2015</span></h3>
                                 <p style={p}> A guest management & analytics platform for professional property managers. Guests use a
                                         mobile app to access information about the vacation home and recommendations for activities
@@ -176,6 +181,7 @@ export default function Experience() {
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
